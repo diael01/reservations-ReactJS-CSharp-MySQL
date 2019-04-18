@@ -1,0 +1,7 @@
+C:\Projects\React-C#-Reservations\React.UI\bin\React.UI.dll.config
+C:\Projects\React-C#-Reservations\React.UI\bin\React.UI.dll
+C:\Projects\React-C#-Reservations\React.UI\bin\React.UI.pdb
+C:\Projects\React-C#-Reservations\React.UI\obj\Debug\React.UI.csprojAssemblyReference.cache
+C:\Projects\React-C#-Reservations\React.UI\obj\Debug\React.UI.csproj.CoreCompileInputs.cache
+C:\Projects\React-C#-Reservations\React.UI\obj\Debug\React.UI.dll
+C:\Projects\React-C#-Reservations\React.UI\obj\Debug\React.UI.pdb

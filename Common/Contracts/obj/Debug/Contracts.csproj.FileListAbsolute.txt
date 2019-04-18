@@ -1,0 +1,5 @@
+D:\Projects\Reservations\Contracts\bin\Debug\Contracts.dll
+D:\Projects\Reservations\Contracts\bin\Debug\Contracts.pdb
+D:\Projects\Reservations\Contracts\obj\Debug\Contracts.dll
+D:\Projects\Reservations\Contracts\obj\Debug\Contracts.pdb
+D:\Projects\Reservations\Contracts\obj\Debug\Contracts.csprojResolveAssemblyReference.cache

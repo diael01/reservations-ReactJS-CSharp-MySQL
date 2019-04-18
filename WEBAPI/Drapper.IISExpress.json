@@ -1,0 +1,71 @@
+﻿{
+    "Namespaces": [
+        {
+            "Namespace": "Reservations.Repositories",
+            "ConnectionString": {
+                "ProviderName": "MySql.Data.MySqlClient",
+                "ConnectionString": "server=127.0.0.1;database=world;uid=root;password=admin;"
+            },
+            "Types": [
+                {
+                    "Name": "Reservations.Repositories.MenuItemsRepository",
+                    "Commands": {
+                        "GetMenuItems": {
+                            "CommandText": "select * from MenuItems;"
+                        }
+                    }
+                },
+                {
+                    "Name": "Reservations.Repositories.FacilitiesRepository",
+                    "Commands": {
+                        "GetFacilities": {
+                            "CommandText": "select * from Facilities;"
+                        },
+                        "GetFacilitiesBySearchCriteria": {
+                            "CommandText": "select * from Facilities where Name like concat(concat('%',@SearchCriteria), '%') OR Address like concat(concat('%',@SearchCriteria), '%') OR Phone like concat(concat('%',@SearchCriteria), '%') OR City like concat(concat('%',@SearchCriteria), '%') OR Country like concat(concat('%',@SearchCriteria), '%') OR ZipCode like concat(concat('%',@SearchCriteria), '%') OR CourtTypes like concat(concat('%',@SearchCriteria), '%') OR Description like concat(concat('%',@SearchCriteria), '%')"
+                        }
+                    }
+                },
+                {
+
+                    "Name": "Reservations.Repositories.ReservationsRepository",
+                    "Commands": {
+                        "CreateReservation": {
+                            "CommandText": "call sp_insert_reservation (@CourtId, @PriceId, @UserId, @StatusId, @Comments, @StartTime, @EndTime, @FacilityId, @PlayersNo, @SlotNo, @Players)"
+                        },
+                        //"GetReservationId": {
+                        //    "CommandText": "select Id from reservations where CourtId = @CourtId and PriceId = @PriceId and UserId = @UserId and StatusId = @StatusId and Comments = @Comments and StartTime=@StartTime and EndTime=@EndTime and FacilityId = @FacilityId and PlayersNo = @PlayersNo and SlotNo = @SlotNo;"
+                        //},
+                         "GetReservationId": {
+                            "CommandText": "select Id from reservations where CourtId = @CourtId and FacilityId = @FacilityId and PlayersNo = @PlayersNo and SlotNo = @SlotNo;"
+                        },
+                        "UpdateReservation": {
+                            "CommandText": "Update Reservations set CourtId=@CourtId,Priceid=@PriceId,UserId=@UserId,StatusId=@StatusId,Comments=@Comments,StartTime=@StartTime,EndTime=@EndTime,Facilityid=@FacilityId,PlayersNo=@PlayersNo, SlotNo = @SlotNo where Id = @Id;"
+                        },
+                        "GetReservationsByFacilityName": {
+                            "CommandText": "exec sp_get_reservation_by_facility_name @FacilityName"
+                        },
+                        "GetReservationsByFacilityId": {
+                            "CommandText": "select * from reservations where FacilityId = @FacilityId"
+                        },
+                        "GetReservationsByCourtId": {
+                            "CommandText": "select * from reservations where CourtId = @CourtId"
+                        },
+                        "GetReservationById": {
+                            "CommandText": "select * from reservations where Id = @Id"
+                        },
+                        "GetReservationsByStartTime": {
+                            "CommandText": "select * from reservations where StartTime = @StartTime"
+                        },
+                        "DeleteReservation": {
+                            "CommandText": "delete from reservations where Id = @Id;"
+                        },
+                        "GetReservationBySlotAndCourt": {
+                            "CommandText": "select * from reservations where SlotNo = @Slot and CourtId=@Court;"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+        }

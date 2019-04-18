@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "React.UI", "React.UI\React.UI.csproj", "{7941A064-56EB-453F-9952-A8298D361267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEBAPI", "WEBAPI\WEBAPI.csproj", "{ABD62FCF-0841-47E8-BBCB-B9B85040FB51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{E9EDDD4A-2EA8-4102-9325-41338EBEE38E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{C117A1B5-427E-4F84-819D-52AEF8A76EF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{5FB310D8-030B-43E3-9E17-8436CA61CEA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{985E92AE-CBCB-4B9A-BD36-79E403673A34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenCover", "OpenCover", "{F16EFC0A-FC2E-4B17-9CB1-76B2668079E1}"
+	ProjectSection(SolutionItems) = preProject
+		OpenCover.VsTests.Run.bat = OpenCover.VsTests.Run.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7941A064-56EB-453F-9952-A8298D361267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7941A064-56EB-453F-9952-A8298D361267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7941A064-56EB-453F-9952-A8298D361267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7941A064-56EB-453F-9952-A8298D361267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD62FCF-0841-47E8-BBCB-B9B85040FB51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD62FCF-0841-47E8-BBCB-B9B85040FB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD62FCF-0841-47E8-BBCB-B9B85040FB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD62FCF-0841-47E8-BBCB-B9B85040FB51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9EDDD4A-2EA8-4102-9325-41338EBEE38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9EDDD4A-2EA8-4102-9325-41338EBEE38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9EDDD4A-2EA8-4102-9325-41338EBEE38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9EDDD4A-2EA8-4102-9325-41338EBEE38E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C117A1B5-427E-4F84-819D-52AEF8A76EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C117A1B5-427E-4F84-819D-52AEF8A76EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C117A1B5-427E-4F84-819D-52AEF8A76EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C117A1B5-427E-4F84-819D-52AEF8A76EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB310D8-030B-43E3-9E17-8436CA61CEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB310D8-030B-43E3-9E17-8436CA61CEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB310D8-030B-43E3-9E17-8436CA61CEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB310D8-030B-43E3-9E17-8436CA61CEA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985E92AE-CBCB-4B9A-BD36-79E403673A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985E92AE-CBCB-4B9A-BD36-79E403673A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985E92AE-CBCB-4B9A-BD36-79E403673A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985E92AE-CBCB-4B9A-BD36-79E403673A34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5458FA54-5D0D-4267-B76A-0DB8EE388F10}
+	EndGlobalSection
+EndGlobal
